@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Bites — College Food Ordering</title>
+  <meta name="description" content="Order from every campus food vendor. AI agents compare live menus, prices and offers (collected by TinyFish) to find your best meal." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="logo" role="link" tabindex="0">🔥 Campus<span>Bites</span></div>
+    <div class="nav-tabs" id="nav-tabs">
+      <a href="#menu"   class="nav-tab active" data-route="menu">🍽️ Menu</a>
+      <a href="#agents" class="nav-tab" data-route="agents">✨ Bites AI</a>
+      <a href="#live"   class="nav-tab" data-route="live">🐟 Live Menus</a>
+      <a href="#track"  class="nav-tab" data-route="track">📦 Track <span class="badge small" id="track-badge" style="display:none">0</span></a>
+    </div>
+    <div class="nav-right">
+      <button class="cart-btn" id="cart-toggle-btn" aria-label="Open cart">
+        🛒 <span class="cart-label">Cart</span> <span class="badge" id="cart-count">0</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGES -->
+  <main id="page-home" class="page active">
+
+    <section class="hero">
+      <div class="hero-tag">🎓 Every campus food stall, one app</div>
+      <h1>Hungry on<br><span class="accent">Campus?</span></h1>
+      <p>Tell our AI agent your budget and what you're craving — it compares every campus menu, live prices and offers, and builds your order.</p>
+
+      <form class="ask-bar" id="hero-ask">
+        <span class="ask-spark" aria-hidden="true">✨</span>
+        <input id="hero-ask-input" type="text" autocomplete="off"
+               placeholder="I have ₹100, suggest a filling lunch with high protein" aria-label="Ask Bites AI" />
+        <button type="submit" class="ask-go">Ask</button>
+      </form>
+      <div class="hero-chips" id="hero-chips">
+        <button class="example-chip" data-ask="Order lunch for five people under ₹500">👥 Lunch for 5 under ₹500</button>
+        <button class="example-chip" data-ask="Find the best deals for ₹120">🏷️ Best deals for ₹120</button>
+        <button class="example-chip" data-ask="Where is my order?">📦 Where is my order?</button>
+      </div>
+    </section>
+
+    <div class="stats-bar">
+      <div class="stat"><span class="stat-num" id="stat-vendors">4</span><span class="stat-label">Campus vendors</span></div>
+      <div class="stat"><span class="stat-num" id="stat-items">–</span><span class="stat-label">Menu items</span></div>
+      <div class="stat"><span class="stat-num" id="stat-live">TinyFish</span><span class="stat-label">Live menus</span></div>
+      <div class="stat"><span class="stat-num">15 min</span><span class="stat-label">Avg prep</span></div>
+    </div>
+
+    <section class="section" id="menu-section">
+      <div class="section-header">
+        <h2 class="section-title">Browse Menu</h2>
+        <span class="result-count" id="result-count"></span>
+      </div>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search burgers, thali, chai, vendors..." autocomplete="off" />
+        <button type="button" id="search-clear" style="display:none" aria-label="Clear search">✕</button>
+      </div>
+      <div class="vendors-row" id="vendor-buttons" aria-label="Vendors"></div>
+      <div class="cats" id="cat-buttons" role="tablist" aria-label="Menu categories"></div>
+      <div class="menu-grid" id="menu-grid"></div>
+      <p class="no-results" id="no-results" style="display:none">No items found. Try a different search.</p>
+    </section>
+
+    <footer class="site-footer">
+      <p>🔥 Campus Bites — Made with ❤️ for students · Vendor menus collected by <strong>TinyFish</strong> web agents</p>
+      <p>Campus Bites Canteen: 8:00 AM – 9:00 PM &nbsp;·&nbsp; Block-A, Ground Floor &nbsp;·&nbsp; <a href="kitchen.html">Kitchen dashboard</a></p>
+    </footer>
+  </main>
+
+  <main id="page-agents" class="page"></main>
+  <main id="page-live" class="page"></main>
+  <main id="page-track" class="page"></main>
+  <main id="page-group" class="page"></main>
+  <main id="page-checkout" class="page"></main>
+  <main id="page-success" class="page"></main>
+
+  <!-- CART PANEL -->
+  <div class="cart-overlay" id="cart-overlay" role="presentation"></div>
+  <aside class="cart-panel" id="cart-panel" role="dialog" aria-label="Shopping cart" aria-modal="true">
+    <div class="cart-header">
+      <h2>Your Order</h2>
+      <button class="close-btn" id="cart-close-btn" aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-items" id="cart-items-list"></div>
+    <div class="cart-footer" id="cart-footer" style="display:none">
+      <div class="cart-row"><span>Subtotal</span><span id="cart-subtotal">₹0</span></div>
+      <div class="cart-row discount" id="cart-discount-row" style="display:none"><span id="cart-discount-label">Offers</span><span id="cart-discount">−₹0</span></div>
+      <div class="cart-row muted"><span>Delivery fee</span><span id="cart-fee">₹20</span></div>
+      <div class="cart-row total"><span>Total</span><span id="cart-grand">₹0</span></div>
+      <button class="checkout-btn" id="proceed-btn">Proceed to Checkout →</button>
+    </div>
+  </aside>
+
+  <script src="js/util.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/track.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/agents.js"></script>
+  <script src="js/group.js"></script>
+  <script src="js/live.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

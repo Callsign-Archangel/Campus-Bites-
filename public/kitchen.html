@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kitchen Dashboard — Campus Bites</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍🍳</text></svg>" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <div class="logo">👩‍🍳 Kitchen<span>Dashboard</span></div>
+    <div class="nav-right"><a class="nav-tab" href="index.html">← Student app</a></div>
+  </nav>
+  <div class="live-wrap">
+    <p class="muted-note">Advance orders, or add a delay — students get a delay notification and the tracking agent reports the new ETA. Auto-refreshes every 10 s.</p>
+    <div class="kitchen-tools">
+      <input id="pin" type="password" placeholder="Kitchen PIN (if set)" />
+      <label><input type="checkbox" id="show-done" /> Show completed</label>
+    </div>
+    <div id="orders" class="kitchen-grid"></div>
+  </div>
+  <script src="js/util.js"></script>
+  <script>
+    const pinEl = document.getElementById("pin");
+    pinEl.value = U.store.get("cb_kitchen_pin", "");
+    const headers = () => ({ "x-kitchen-pin": pinEl.value });
+    const NEXT = { placed: "confirmed", confirmed: "preparing", preparing: "ready", ready: "out_for_delivery", out_for_delivery: "delivered" };
+
+    async function load() {
+      U.store.set("cb_kitchen_pin", pinEl.value);
+      const box = document.getElementById("orders");
+      try {
+        let list = await U.api("/api/kitchen/orders", { headers: headers() });
+        if (!document.getElementById("show-done").checked) list = list.filter(o => !["delivered", "collected", "cancelled"].includes(o.status));
+        box.innerHTML = list.length ? list.map(o => {
+          let next = NEXT[o.status];
+          if (o.mode === "pickup" && o.status === "ready") next = "collected";
+          return `
+          <div class="vendor-card">
+            <div class="vendor-card-head">
+              <div><div class="vendor-name">#${U.esc(o.id)}</div>
+              <div class="vendor-meta">${U.esc(o.customer.name)} · ${U.esc(o.customer.location)} · ${U.fmtTime(o.createdAt)}</div></div>
+              <span class="status-pill ${o.delayed ? "late" : ""}">${U.esc(o.statusLabel)}</span>
+            </div>
+            ${o.bill.vendors.map(v => `<div class="mini-title">${U.esc(v.vendorName)}</div>${v.lines.map(l => `<div>${U.esc(l.emoji)} ${U.esc(l.name)} ×${l.qty}</div>`).join("")}`).join("")}
+            ${o.note ? `<div class="vendor-meta">📝 ${U.esc(o.note)}</div>` : ""}
+            <div class="vendor-meta">Prep ${o.prepMinutes} min · ${o.prepMinutesLeft} left · done by ${U.fmtTime(o.etaDoneAt)}${o.delayMinutes ? ` · +${o.delayMinutes} min delay` : ""}</div>
+            <div class="vendor-actions">
+              ${next ? `<button class="mini-btn" data-id="${o.id}" data-status="${next}">→ ${next.replace(/_/g, " ")}</button>` : ""}
+              <button class="mini-btn" data-id="${o.id}" data-delay="5">+5 min delay</button>
+              <button class="mini-btn" data-id="${o.id}" data-delay="10">+10 min</button>
+            </div>
+          </div>`;
+        }).join("") : `<p class="muted-note">No active orders.</p>`;
+      } catch (e) { box.innerHTML = `<p class="form-error" style="display:block">${U.esc(e.message)}</p>`; }
+    }
+
+    document.getElementById("orders").addEventListener("click", async e => {
+      const b = e.target.closest("[data-id]"); if (!b) return;
+      const body = b.dataset.status ? { status: b.dataset.status } : { delayMinutes: Number(b.dataset.delay), reason: prompt("Reason shown to the student (optional):", "Kitchen rush") || "" };
+      try { await U.api(`/api/kitchen/orders/${b.dataset.id}`, { method: "PATCH", body, headers: headers() }); load(); }
+      catch (err) { U.toast(err.message, "warn"); }
+    });
+    pinEl.addEventListener("change", load);
+    document.getElementById("show-done").addEventListener("change", load);
+    load(); setInterval(load, 10000);
+  </script>
+</body>
+</html>

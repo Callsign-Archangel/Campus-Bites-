@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Desi Dhaba Express — Menu</title>
+<style>
+  :root { --brand: #15803d; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Georgia, "Times New Roman", serif; background: #fbf7f0; color: #222; }
+  header { background: var(--brand); color: #fff; padding: 28px 16px; text-align: center; }
+  header h1 { margin: 0 0 4px; font-size: 30px; }
+  header p { margin: 2px 0; opacity: .9; font-size: 14px; }
+  main { max-width: 760px; margin: 0 auto; padding: 16px; }
+  .offers { background: #fff7d6; border: 2px dashed #d4a017; border-radius: 10px; padding: 12px 16px; margin: 16px 0; }
+  .offers h2 { margin: 0 0 6px; font-size: 18px; }
+  .offers li { margin: 4px 0; }
+  .offers small { color: #555; }
+  section h2 { border-bottom: 2px solid var(--brand); padding-bottom: 4px; font-size: 20px; }
+  .items { list-style: none; padding: 0; margin: 0; }
+  .item { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid #e8e0d0; }
+  .item h3 { margin: 0; font-size: 16px; }
+  .item p { margin: 2px 0 0; font-size: 13px; color: #555; }
+  .info { flex: 1; }
+  .price { font-weight: bold; white-space: nowrap; }
+  .price s { color: #999; font-weight: normal; }
+  .soldout { opacity: .55; }
+  .tag { display: block; font-size: 11px; color: #b91c1c; text-align: right; }
+  .dot { width: 12px; height: 12px; margin-top: 4px; border: 2px solid; flex-shrink: 0; }
+  .dot.veg { border-color: #15803d; background: radial-gradient(#15803d 40%, #fff 45%); }
+  .dot.nonveg { border-color: #b91c1c; background: radial-gradient(#b91c1c 40%, #fff 45%); }
+  footer { text-align: center; font-size: 12px; color: #777; padding: 24px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Desi Dhaba Express</h1>
+  <p>Ghar jaisa khana for hostel folks</p>
+  <p>📍 Gate 2, opposite Hostel C · 🕒 11:30 AM – 3:30 PM, 7:00 PM – 10:30 PM</p>
+</header>
+<main>
+  <div class="offers">
+    <h2>Today's Offers</h2>
+    <ul>
+      <li><strong>Flat ₹25 off on orders above ₹250</strong><br><small>Auto-applied at checkout</small></li>
+      <li><strong>20% off on all Thalis</strong><br><small>Weekdays, lunch only</small></li>
+    </ul>
+  </div>
+  
+    <section>
+      <h2>Rice &amp; Combos</h2>
+      <ul class="items">
+        
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Rajma Chawal</h3>
+            <p>Kidney bean curry with steamed rice</p>
+          </div>
+          <div class="price">₹80</div>
+        </li>
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Curd Rice</h3>
+            <p>Tempered curd rice with pickle</p>
+          </div>
+          <div class="price">₹60</div>
+        </li>
+        <li class="item">
+          <span class="dot nonveg" title="Non-veg"></span>
+          <div class="info">
+            <h3>Egg Curry Rice</h3>
+            <p>2 boiled eggs in onion-tomato gravy with rice · ~18g protein</p>
+          </div>
+          <div class="price">₹95</div>
+        </li>
+        <li class="item">
+          <span class="dot nonveg" title="Non-veg"></span>
+          <div class="info">
+            <h3>Chicken Curry Rice</h3>
+            <p>Home-style chicken curry with rice · ~30g protein</p>
+          </div>
+          <div class="price">₹140</div>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Thalis</h2>
+      <ul class="items">
+        
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Veg Thali</h3>
+            <p>Dal, sabzi, 3 roti, rice, salad &amp; pickle</p>
+          </div>
+          <div class="price">₹110</div>
+        </li>
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Paneer Thali</h3>
+            <p>Paneer sabzi, dal, 3 roti, rice &amp; sweet · ~26g protein</p>
+          </div>
+          <div class="price">₹140</div>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Breads &amp; Curries</h2>
+      <ul class="items">
+        
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Chole Bhature</h3>
+            <p>Spicy chickpeas with 2 fluffy bhature</p>
+          </div>
+          <div class="price">₹90</div>
+        </li>
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Dal Tadka + 4 Roti</h3>
+            <p>Yellow dal with garlic tadka &amp; 4 tawa roti</p>
+          </div>
+          <div class="price">₹75</div>
+        </li>
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Aloo Paratha (2) + Curd</h3>
+            <p>Stuffed parathas with curd &amp; pickle</p>
+          </div>
+          <div class="price">₹70</div>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Sweets &amp; Drinks</h2>
+      <ul class="items">
+        
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Sweet Lassi</h3>
+            <p>Thick Punjabi lassi</p>
+          </div>
+          <div class="price">₹40</div>
+        </li>
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Gulab Jamun (2)</h3>
+            <p>Warm syrupy dumplings</p>
+          </div>
+          <div class="price">₹35</div>
+        </li>
+      </ul>
+    </section>
+</main>
+<footer>Sample campus vendor page for the Campus Bites demo. Prices in INR, inclusive of taxes.</footer>
+</body>
+</html>

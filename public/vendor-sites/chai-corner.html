@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chai Corner — Menu</title>
+<style>
+  :root { --brand: #b45309; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Georgia, "Times New Roman", serif; background: #fbf7f0; color: #222; }
+  header { background: var(--brand); color: #fff; padding: 28px 16px; text-align: center; }
+  header h1 { margin: 0 0 4px; font-size: 30px; }
+  header p { margin: 2px 0; opacity: .9; font-size: 14px; }
+  main { max-width: 760px; margin: 0 auto; padding: 16px; }
+  .offers { background: #fff7d6; border: 2px dashed #d4a017; border-radius: 10px; padding: 12px 16px; margin: 16px 0; }
+  .offers h2 { margin: 0 0 6px; font-size: 18px; }
+  .offers li { margin: 4px 0; }
+  .offers small { color: #555; }
+  section h2 { border-bottom: 2px solid var(--brand); padding-bottom: 4px; font-size: 20px; }
+  .items { list-style: none; padding: 0; margin: 0; }
+  .item { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid #e8e0d0; }
+  .item h3 { margin: 0; font-size: 16px; }
+  .item p { margin: 2px 0 0; font-size: 13px; color: #555; }
+  .info { flex: 1; }
+  .price { font-weight: bold; white-space: nowrap; }
+  .price s { color: #999; font-weight: normal; }
+  .soldout { opacity: .55; }
+  .tag { display: block; font-size: 11px; color: #b91c1c; text-align: right; }
+  .dot { width: 12px; height: 12px; margin-top: 4px; border: 2px solid; flex-shrink: 0; }
+  .dot.veg { border-color: #15803d; background: radial-gradient(#15803d 40%, #fff 45%); }
+  .dot.nonveg { border-color: #b91c1c; background: radial-gradient(#b91c1c 40%, #fff 45%); }
+  footer { text-align: center; font-size: 12px; color: #777; padding: 24px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Chai Corner</h1>
+  <p>Chai, snacks &amp; quick bites since 2009</p>
+  <p>📍 Near Central Library · 🕒 7:00 AM – 10:00 PM</p>
+</header>
+<main>
+  <div class="offers">
+    <h2>Today's Offers</h2>
+    <ul>
+      <li><strong>Any chai + any snack: ₹10 off</strong><br><small>Valid all day on every chai with one snack item</small></li>
+      <li><strong>Buy 1 Get 1 on Vada Pav</strong><br><small>Till 6 PM, dine-in &amp; takeaway</small></li>
+    </ul>
+  </div>
+  
+    <section>
+      <h2>Hot Beverages</h2>
+      <ul class="items">
+        
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Cutting Chai</h3>
+            <p>Strong, sweet, half-glass</p>
+          </div>
+          <div class="price">₹15</div>
+        </li>
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Masala Chai</h3>
+            <p>Ginger, cardamom &amp; clove</p>
+          </div>
+          <div class="price">₹20</div>
+        </li>
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Filter Coffee</h3>
+            <p>South Indian decoction coffee</p>
+          </div>
+          <div class="price">₹25</div>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Breakfast &amp; Snacks</h2>
+      <ul class="items">
+        
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Vada Pav</h3>
+            <p>Spicy potato vada in a soft pav</p>
+          </div>
+          <div class="price">₹25</div>
+        </li>
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Bun Maska</h3>
+            <p>Butter-loaded soft bun</p>
+          </div>
+          <div class="price">₹30</div>
+        </li>
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Poha</h3>
+            <p>Flattened rice with peanuts &amp; onion</p>
+          </div>
+          <div class="price"><s>₹40</s> ₹35</div>
+        </li>
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Upma</h3>
+            <p>Semolina with veggies &amp; curry leaves</p>
+          </div>
+          <div class="price">₹35</div>
+        </li>
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Veg Puff</h3>
+            <p>Flaky pastry with spiced veg filling</p>
+          </div>
+          <div class="price">₹25</div>
+        </li>
+        <li class="item">
+          <span class="dot nonveg" title="Non-veg"></span>
+          <div class="info">
+            <h3>Bread Omelette (2 eggs)</h3>
+            <p>Two-egg masala omelette in toasted bread · ~14g protein</p>
+          </div>
+          <div class="price">₹50</div>
+        </li>
+        <li class="item">
+          <span class="dot nonveg" title="Non-veg"></span>
+          <div class="info">
+            <h3>Egg Bhurji Pav</h3>
+            <p>Scrambled eggs, onion, chilli with 2 pav · ~16g protein</p>
+          </div>
+          <div class="price">₹60</div>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Cold Drinks</h2>
+      <ul class="items">
+        
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Banana Shake</h3>
+            <p>Banana blended with chilled milk</p>
+          </div>
+          <div class="price">₹50</div>
+        </li>
+        <li class="item soldout">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Lemon Soda</h3>
+            <p>Fresh lime with soda</p>
+          </div>
+          <div class="price">₹30<span class="tag">Sold out</span></div>
+        </li>
+      </ul>
+    </section>
+</main>
+<footer>Sample campus vendor page for the Campus Bites demo. Prices in INR, inclusive of taxes.</footer>
+</body>
+</html>

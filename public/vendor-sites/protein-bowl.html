@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Protein Bowl Co. — Menu</title>
+<style>
+  :root { --brand: #1d4ed8; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Georgia, "Times New Roman", serif; background: #fbf7f0; color: #222; }
+  header { background: var(--brand); color: #fff; padding: 28px 16px; text-align: center; }
+  header h1 { margin: 0 0 4px; font-size: 30px; }
+  header p { margin: 2px 0; opacity: .9; font-size: 14px; }
+  main { max-width: 760px; margin: 0 auto; padding: 16px; }
+  .offers { background: #fff7d6; border: 2px dashed #d4a017; border-radius: 10px; padding: 12px 16px; margin: 16px 0; }
+  .offers h2 { margin: 0 0 6px; font-size: 18px; }
+  .offers li { margin: 4px 0; }
+  .offers small { color: #555; }
+  section h2 { border-bottom: 2px solid var(--brand); padding-bottom: 4px; font-size: 20px; }
+  .items { list-style: none; padding: 0; margin: 0; }
+  .item { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid #e8e0d0; }
+  .item h3 { margin: 0; font-size: 16px; }
+  .item p { margin: 2px 0 0; font-size: 13px; color: #555; }
+  .info { flex: 1; }
+  .price { font-weight: bold; white-space: nowrap; }
+  .price s { color: #999; font-weight: normal; }
+  .soldout { opacity: .55; }
+  .tag { display: block; font-size: 11px; color: #b91c1c; text-align: right; }
+  .dot { width: 12px; height: 12px; margin-top: 4px; border: 2px solid; flex-shrink: 0; }
+  .dot.veg { border-color: #15803d; background: radial-gradient(#15803d 40%, #fff 45%); }
+  .dot.nonveg { border-color: #b91c1c; background: radial-gradient(#b91c1c 40%, #fff 45%); }
+  footer { text-align: center; font-size: 12px; color: #777; padding: 24px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Protein Bowl Co.</h1>
+  <p>Macros-first meals for the gym crowd</p>
+  <p>📍 Sports Complex, Ground Floor · 🕒 8:00 AM – 9:00 PM</p>
+</header>
+<main>
+  <div class="offers">
+    <h2>Today's Offers</h2>
+    <ul>
+      <li><strong>GAINS15: 15% off above ₹199</strong><br><small>Up to ₹40 off. Use code GAINS15</small></li>
+      <li><strong>Any bowl + shake combo: ₹30 off</strong><br><small>Pair any Power Bowl with any shake</small></li>
+    </ul>
+  </div>
+  
+    <section>
+      <h2>Power Bowls</h2>
+      <ul class="items">
+        
+        <li class="item">
+          <span class="dot nonveg" title="Non-veg"></span>
+          <div class="info">
+            <h3>Chicken Rice Bowl</h3>
+            <p>Grilled chicken, brown rice, veggies · 35g protein</p>
+          </div>
+          <div class="price">₹150</div>
+        </li>
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Paneer Tikka Bowl</h3>
+            <p>Tandoori paneer, rice, salad · 24g protein</p>
+          </div>
+          <div class="price">₹130</div>
+        </li>
+        <li class="item">
+          <span class="dot nonveg" title="Non-veg"></span>
+          <div class="info">
+            <h3>Egg White Bowl</h3>
+            <p>6 egg whites, sautéed veggies, toast · 22g protein</p>
+          </div>
+          <div class="price">₹110</div>
+        </li>
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Soya Chunk Pulao</h3>
+            <p>Soya chunks cooked with rice &amp; spices · 23g protein</p>
+          </div>
+          <div class="price">₹90</div>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Light &amp; Lean</h2>
+      <ul class="items">
+        
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Sprouts Chaat</h3>
+            <p>Moong sprouts, onion, lemon · 11g protein</p>
+          </div>
+          <div class="price">₹50</div>
+        </li>
+        <li class="item">
+          <span class="dot nonveg" title="Non-veg"></span>
+          <div class="info">
+            <h3>Boiled Eggs (4)</h3>
+            <p>Four boiled eggs with pepper &amp; salt · 24g protein</p>
+          </div>
+          <div class="price">₹48</div>
+        </li>
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Chana Salad</h3>
+            <p>Chickpeas, cucumber, tomato · 14g protein</p>
+          </div>
+          <div class="price">₹60</div>
+        </li>
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Peanut Butter Toast</h3>
+            <p>Whole wheat toast, peanut butter, banana · 12g protein</p>
+          </div>
+          <div class="price">₹60</div>
+        </li>
+        <li class="item">
+          <span class="dot nonveg" title="Non-veg"></span>
+          <div class="info">
+            <h3>Grilled Chicken Wrap</h3>
+            <p>Grilled chicken, hung curd dip · 30g protein</p>
+          </div>
+          <div class="price">₹120</div>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Shakes</h2>
+      <ul class="items">
+        
+        <li class="item">
+          <span class="dot veg" title="Veg"></span>
+          <div class="info">
+            <h3>Whey Banana Shake</h3>
+            <p>1 scoop whey, banana, milk · 28g protein</p>
+          </div>
+          <div class="price">₹99</div>
+        </li>
+      </ul>
+    </section>
+</main>
+<footer>Sample campus vendor page for the Campus Bites demo. Prices in INR, inclusive of taxes.</footer>
+</body>
+</html>
