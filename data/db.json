@@ -1,0 +1,1158 @@
+{
+  "orders": [
+    {
+      "id": "CB879248",
+      "createdAt": "2026-10-30T08:04:28.705Z",
+      "customer": {
+        "name": "gowth",
+        "phone": "9015526356",
+        "roll": "77898",
+        "location": "Hostel C"
+      },
+      "mode": "delivery",
+      "payMethod": "cod",
+      "note": "n n",
+      "bill": {
+        "mode": "delivery",
+        "vendors": [
+          {
+            "vendorId": "protein-bowl",
+            "vendorName": "Protein Bowl Co.",
+            "lines": [
+              {
+                "itemId": "protein-bowl:egg-white-bowl",
+                "name": "Egg White Bowl",
+                "emoji": "🥚",
+                "price": 110,
+                "qty": 1,
+                "veg": false,
+                "total": 110
+              },
+              {
+                "itemId": "protein-bowl:soya-chunk-pulao",
+                "name": "Soya Chunk Pulao",
+                "emoji": "🍚",
+                "price": 90,
+                "qty": 1,
+                "veg": true,
+                "total": 90
+              }
+            ],
+            "subtotal": 200,
+            "discount": 30,
+            "offer": {
+              "id": "protein-bowl:offer0",
+              "title": "GAINS15: 15% off above ₹199",
+              "code": "GAINS15"
+            },
+            "fee": 20,
+            "total": 190
+          }
+        ],
+        "subtotal": 200,
+        "discount": 30,
+        "fee": 20,
+        "total": 190,
+        "problems": []
+      },
+      "prepMinutes": 12,
+      "travelMinutes": 10,
+      "queueAtPlacement": 0,
+      "delays": [],
+      "manualStatus": null,
+      "groupCartId": null
+    },
+    {
+      "id": "CB428307",
+      "createdAt": "2026-10-30T08:11:50.043Z",
+      "customer": {
+        "name": "gowth",
+        "phone": "9015526356",
+        "roll": "",
+        "location": "Pick-up from Canteen"
+      },
+      "mode": "pickup",
+      "payMethod": "upi",
+      "note": "Group order (Seat 1: 2 item(s); Seat 2: 1 item(s); Seat 3: 2 item(s); Seat 4: 1 item(s); Seat 5: 1 item(s))",
+      "bill": {
+        "mode": "pickup",
+        "vendors": [
+          {
+            "vendorId": "protein-bowl",
+            "vendorName": "Protein Bowl Co.",
+            "lines": [
+              {
+                "itemId": "protein-bowl:grilled-chicken-wrap",
+                "name": "Grilled Chicken Wrap",
+                "emoji": "🍗",
+                "price": 120,
+                "qty": 3,
+                "veg": false,
+                "total": 360
+              },
+              {
+                "itemId": "protein-bowl:chicken-rice-bowl",
+                "name": "Chicken Rice Bowl",
+                "emoji": "🍗",
+                "price": 150,
+                "qty": 1,
+                "veg": false,
+                "total": 150
+              },
+              {
+                "itemId": "protein-bowl:soya-chunk-pulao",
+                "name": "Soya Chunk Pulao",
+                "emoji": "🍚",
+                "price": 90,
+                "qty": 3,
+                "veg": true,
+                "total": 270
+              }
+            ],
+            "subtotal": 780,
+            "discount": 40,
+            "offer": {
+              "id": "protein-bowl:offer0",
+              "title": "GAINS15: 15% off above ₹199",
+              "code": "GAINS15"
+            },
+            "fee": 0,
+            "total": 740
+          }
+        ],
+        "subtotal": 780,
+        "discount": 40,
+        "fee": 0,
+        "total": 740,
+        "problems": []
+      },
+      "prepMinutes": 16,
+      "travelMinutes": 0,
+      "queueAtPlacement": 1,
+      "delays": [],
+      "manualStatus": null,
+      "groupCartId": "566bdf94"
+    },
+    {
+      "id": "CB514485",
+      "createdAt": "2026-10-30T08:17:39.242Z",
+      "customer": {
+        "name": "u",
+        "phone": "4778909008",
+        "roll": "4",
+        "location": "Hostel A"
+      },
+      "mode": "delivery",
+      "payMethod": "cod",
+      "note": "d",
+      "bill": {
+        "mode": "delivery",
+        "vendors": [
+          {
+            "vendorId": "protein-bowl",
+            "vendorName": "Protein Bowl Co.",
+            "lines": [
+              {
+                "itemId": "protein-bowl:soya-chunk-pulao",
+                "name": "Soya Chunk Pulao",
+                "emoji": "🍚",
+                "price": 90,
+                "qty": 1,
+                "veg": true,
+                "total": 90
+              },
+              {
+                "itemId": "protein-bowl:boiled-eggs-4",
+                "name": "Boiled Eggs (4)",
+                "emoji": "🥚",
+                "price": 48,
+                "qty": 1,
+                "veg": false,
+                "total": 48
+              }
+            ],
+            "subtotal": 138,
+            "discount": 0,
+            "offer": null,
+            "fee": 20,
+            "total": 158
+          },
+          {
+            "vendorId": "chai-corner",
+            "vendorName": "Chai Corner",
+            "lines": [
+              {
+                "itemId": "chai-corner:bun-maska",
+                "name": "Bun Maska",
+                "emoji": "🍞",
+                "price": 30,
+                "qty": 1,
+                "veg": true,
+                "total": 30
+              },
+              {
+                "itemId": "chai-corner:egg-bhurji-pav",
+                "name": "Egg Bhurji Pav",
+                "emoji": "🥚",
+                "price": 60,
+                "qty": 2,
+                "veg": false,
+                "total": 120
+              }
+            ],
+            "subtotal": 150,
+            "discount": 0,
+            "offer": null,
+            "fee": 15,
+            "total": 165
+          }
+        ],
+        "subtotal": 288,
+        "discount": 0,
+        "fee": 35,
+        "total": 323,
+        "problems": []
+      },
+      "prepMinutes": 18,
+      "travelMinutes": 6,
+      "queueAtPlacement": 2,
+      "delays": [],
+      "manualStatus": null,
+      "groupCartId": null
+    }
+  ],
+  "groupCarts": [
+    {
+      "id": "566bdf94",
+      "vendorId": "protein-bowl",
+      "budget": 500,
+      "mode": "pickup",
+      "people": 5,
+      "seats": [
+        {
+          "seat": 1,
+          "name": "",
+          "confirmed": true,
+          "lines": [
+            {
+              "itemId": "protein-bowl:grilled-chicken-wrap",
+              "qty": 1
+            },
+            {
+              "itemId": "protein-bowl:chicken-rice-bowl",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "seat": 2,
+          "name": "",
+          "confirmed": true,
+          "lines": [
+            {
+              "itemId": "protein-bowl:soya-chunk-pulao",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "seat": 3,
+          "name": "",
+          "confirmed": true,
+          "lines": [
+            {
+              "itemId": "protein-bowl:soya-chunk-pulao",
+              "qty": 1
+            },
+            {
+              "itemId": "protein-bowl:soya-chunk-pulao",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "seat": 4,
+          "name": "",
+          "confirmed": true,
+          "lines": [
+            {
+              "itemId": "protein-bowl:grilled-chicken-wrap",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "seat": 5,
+          "name": "",
+          "confirmed": true,
+          "lines": [
+            {
+              "itemId": "protein-bowl:grilled-chicken-wrap",
+              "qty": 1
+            }
+          ]
+        }
+      ],
+      "createdBy": "gowth",
+      "status": "placed",
+      "orderId": "CB428307",
+      "createdAt": "2026-10-30T08:10:38.857Z"
+    }
+  ],
+  "vendors": {
+    "chai-corner": {
+      "items": [
+        {
+          "id": "chai-corner:cutting-chai",
+          "vendorId": "chai-corner",
+          "vendorName": "Chai Corner",
+          "name": "Cutting Chai",
+          "desc": "Strong, sweet, half-glass",
+          "price": 15,
+          "originalPrice": null,
+          "cat": "Drinks",
+          "vendorCat": "Hot Beverages",
+          "veg": true,
+          "available": true,
+          "protein": 1,
+          "kcal": 105,
+          "proteinStated": false,
+          "kind": "drink",
+          "emoji": "🍵",
+          "prep": 3,
+          "source": "tinyfish",
+          "fill": 0.3
+        },
+        {
+          "id": "chai-corner:masala-chai",
+          "vendorId": "chai-corner",
+          "vendorName": "Chai Corner",
+          "name": "Masala Chai",
+          "desc": "Ginger, cardamom & clove",
+          "price": 20,
+          "originalPrice": null,
+          "cat": "Drinks",
+          "vendorCat": "Hot Beverages",
+          "veg": true,
+          "available": true,
+          "protein": 1,
+          "kcal": 107,
+          "proteinStated": false,
+          "kind": "drink",
+          "emoji": "🍵",
+          "prep": 3,
+          "source": "tinyfish",
+          "fill": 0.3
+        },
+        {
+          "id": "chai-corner:filter-coffee",
+          "vendorId": "chai-corner",
+          "vendorName": "Chai Corner",
+          "name": "Filter Coffee",
+          "desc": "South Indian decoction coffee",
+          "price": 25,
+          "originalPrice": null,
+          "cat": "Drinks",
+          "vendorCat": "Hot Beverages",
+          "veg": true,
+          "available": true,
+          "protein": 1,
+          "kcal": 110,
+          "proteinStated": false,
+          "kind": "drink",
+          "emoji": "☕",
+          "prep": 3,
+          "source": "tinyfish",
+          "fill": 0.3
+        },
+        {
+          "id": "chai-corner:vada-pav",
+          "vendorId": "chai-corner",
+          "vendorName": "Chai Corner",
+          "name": "Vada Pav",
+          "desc": "Spicy potato vada in a soft pav",
+          "price": 25,
+          "originalPrice": null,
+          "cat": "Snacks",
+          "vendorCat": "Breakfast & Snacks",
+          "veg": true,
+          "available": true,
+          "protein": 4,
+          "kcal": 219,
+          "proteinStated": false,
+          "kind": "side",
+          "emoji": "🍞",
+          "prep": 5,
+          "source": "tinyfish",
+          "fill": 2.9
+        },
+        {
+          "id": "chai-corner:bun-maska",
+          "vendorId": "chai-corner",
+          "vendorName": "Chai Corner",
+          "name": "Bun Maska",
+          "desc": "Butter-loaded soft bun",
+          "price": 30,
+          "originalPrice": null,
+          "cat": "Snacks",
+          "vendorCat": "Breakfast & Snacks",
+          "veg": true,
+          "available": true,
+          "protein": 4,
+          "kcal": 224,
+          "proteinStated": false,
+          "kind": "side",
+          "emoji": "🍞",
+          "prep": 5,
+          "source": "tinyfish",
+          "fill": 3
+        },
+        {
+          "id": "chai-corner:poha",
+          "vendorId": "chai-corner",
+          "vendorName": "Chai Corner",
+          "name": "Poha",
+          "desc": "Flattened rice with peanuts & onion",
+          "price": 35,
+          "originalPrice": 40,
+          "cat": "Snacks",
+          "vendorCat": "Breakfast & Snacks",
+          "veg": true,
+          "available": true,
+          "protein": 4,
+          "kcal": 229,
+          "proteinStated": false,
+          "kind": "side",
+          "emoji": "🥟",
+          "prep": 5,
+          "source": "tinyfish",
+          "fill": 3
+        },
+        {
+          "id": "chai-corner:upma",
+          "vendorId": "chai-corner",
+          "vendorName": "Chai Corner",
+          "name": "Upma",
+          "desc": "Semolina with veggies & curry leaves",
+          "price": 35,
+          "originalPrice": null,
+          "cat": "Snacks",
+          "vendorCat": "Breakfast & Snacks",
+          "veg": true,
+          "available": true,
+          "protein": 4,
+          "kcal": 229,
+          "proteinStated": false,
+          "kind": "side",
+          "emoji": "🥟",
+          "prep": 5,
+          "source": "tinyfish",
+          "fill": 3
+        },
+        {
+          "id": "chai-corner:veg-puff",
+          "vendorId": "chai-corner",
+          "vendorName": "Chai Corner",
+          "name": "Veg Puff",
+          "desc": "Flaky pastry with spiced veg filling",
+          "price": 25,
+          "originalPrice": null,
+          "cat": "Snacks",
+          "vendorCat": "Breakfast & Snacks",
+          "veg": true,
+          "available": true,
+          "protein": 4,
+          "kcal": 219,
+          "proteinStated": false,
+          "kind": "side",
+          "emoji": "🥟",
+          "prep": 5,
+          "source": "tinyfish",
+          "fill": 2.9
+        },
+        {
+          "id": "chai-corner:bread-omelette-2-eggs",
+          "vendorId": "chai-corner",
+          "vendorName": "Chai Corner",
+          "name": "Bread Omelette (2 eggs)",
+          "desc": "Two-egg masala omelette in toasted bread · ~14g protein",
+          "price": 50,
+          "originalPrice": null,
+          "cat": "Snacks",
+          "vendorCat": "Breakfast & Snacks",
+          "veg": false,
+          "available": true,
+          "protein": 14,
+          "kcal": 243,
+          "proteinStated": true,
+          "kind": "side",
+          "emoji": "🥚",
+          "prep": 5,
+          "source": "tinyfish",
+          "fill": 4.5
+        },
+        {
+          "id": "chai-corner:egg-bhurji-pav",
+          "vendorId": "chai-corner",
+          "vendorName": "Chai Corner",
+          "name": "Egg Bhurji Pav",
+          "desc": "Scrambled eggs, onion, chilli with 2 pav · ~16g protein",
+          "price": 60,
+          "originalPrice": null,
+          "cat": "Snacks",
+          "vendorCat": "Breakfast & Snacks",
+          "veg": false,
+          "available": true,
+          "protein": 16,
+          "kcal": 252,
+          "proteinStated": true,
+          "kind": "side",
+          "emoji": "🥚",
+          "prep": 5,
+          "source": "tinyfish",
+          "fill": 4.8
+        },
+        {
+          "id": "chai-corner:banana-shake",
+          "vendorId": "chai-corner",
+          "vendorName": "Chai Corner",
+          "name": "Banana Shake",
+          "desc": "Banana blended with chilled milk",
+          "price": 50,
+          "originalPrice": null,
+          "cat": "Drinks",
+          "vendorCat": "Cold Drinks",
+          "veg": true,
+          "available": true,
+          "protein": 7,
+          "kcal": 260,
+          "proteinStated": false,
+          "kind": "drink",
+          "emoji": "🥤",
+          "prep": 3,
+          "source": "tinyfish",
+          "fill": 2.8
+        },
+        {
+          "id": "chai-corner:lemon-soda",
+          "vendorId": "chai-corner",
+          "vendorName": "Chai Corner",
+          "name": "Lemon Soda",
+          "desc": "Fresh lime with soda",
+          "price": 30,
+          "originalPrice": null,
+          "cat": "Drinks",
+          "vendorCat": "Cold Drinks",
+          "veg": true,
+          "available": false,
+          "protein": 1,
+          "kcal": 112,
+          "proteinStated": false,
+          "kind": "drink",
+          "emoji": "🍋",
+          "prep": 3,
+          "source": "tinyfish",
+          "fill": 0.4
+        }
+      ],
+      "offers": [
+        {
+          "id": "chai-corner:offer0",
+          "vendorId": "chai-corner",
+          "title": "Any chai + any snack: ₹10 off",
+          "details": "Valid all day on every chai with one snack item",
+          "code": null,
+          "type": "combo",
+          "value": 10,
+          "minOrder": 0,
+          "maxDiscount": null,
+          "appliesTo": [],
+          "groups": [
+            [
+              "chai"
+            ],
+            [
+              "cat:Snacks"
+            ]
+          ]
+        },
+        {
+          "id": "chai-corner:offer1",
+          "vendorId": "chai-corner",
+          "title": "Buy 1 Get 1 on Vada Pav",
+          "details": "Till 6 PM, dine-in & takeaway",
+          "code": null,
+          "type": "bogo",
+          "value": 0,
+          "minOrder": 0,
+          "maxDiscount": null,
+          "appliesTo": [
+            "vada pav"
+          ],
+          "groups": []
+        }
+      ],
+      "notes": "",
+      "fetchedAt": null,
+      "source": "seed",
+      "lastRun": {
+        "status": "error",
+        "at": "2026-10-30T08:12:47.336Z",
+        "message": "\"/vendor-sites/chai-corner.html\" is a local path. TinyFish runs in the cloud and cannot open localhost — set PUBLIC_BASE_URL in .env to your deployed/tunnel URL, or give the vendor a full https:// URL."
+      },
+      "changes": []
+    },
+    "desi-dhaba": {
+      "items": [
+        {
+          "id": "desi-dhaba:rajma-chawal",
+          "vendorId": "desi-dhaba",
+          "vendorName": "Desi Dhaba Express",
+          "name": "Rajma Chawal",
+          "desc": "Kidney bean curry with steamed rice",
+          "price": 80,
+          "originalPrice": null,
+          "cat": "Meals",
+          "vendorCat": "Rice & Combos",
+          "veg": true,
+          "available": true,
+          "protein": 13,
+          "kcal": 541,
+          "proteinStated": false,
+          "kind": "main",
+          "emoji": "🍚",
+          "prep": 12,
+          "source": "tinyfish",
+          "fill": 9.1
+        },
+        {
+          "id": "desi-dhaba:curd-rice",
+          "vendorId": "desi-dhaba",
+          "vendorName": "Desi Dhaba Express",
+          "name": "Curd Rice",
+          "desc": "Tempered curd rice with pickle",
+          "price": 60,
+          "originalPrice": null,
+          "cat": "Meals",
+          "vendorCat": "Rice & Combos",
+          "veg": true,
+          "available": true,
+          "protein": 7,
+          "kcal": 504,
+          "proteinStated": false,
+          "kind": "main",
+          "emoji": "🍚",
+          "prep": 12,
+          "source": "tinyfish",
+          "fill": 8
+        },
+        {
+          "id": "desi-dhaba:egg-curry-rice",
+          "vendorId": "desi-dhaba",
+          "vendorName": "Desi Dhaba Express",
+          "name": "Egg Curry Rice",
+          "desc": "2 boiled eggs in onion-tomato gravy with rice · ~18g protein",
+          "price": 95,
+          "originalPrice": null,
+          "cat": "Meals",
+          "vendorCat": "Rice & Combos",
+          "veg": false,
+          "available": true,
+          "protein": 18,
+          "kcal": 569,
+          "proteinStated": true,
+          "kind": "main",
+          "emoji": "🥚",
+          "prep": 12,
+          "source": "tinyfish",
+          "fill": 10
+        },
+        {
+          "id": "desi-dhaba:chicken-curry-rice",
+          "vendorId": "desi-dhaba",
+          "vendorName": "Desi Dhaba Express",
+          "name": "Chicken Curry Rice",
+          "desc": "Home-style chicken curry with rice · ~30g protein",
+          "price": 140,
+          "originalPrice": null,
+          "cat": "Meals",
+          "vendorCat": "Rice & Combos",
+          "veg": false,
+          "available": true,
+          "protein": 30,
+          "kcal": 653,
+          "proteinStated": true,
+          "kind": "main",
+          "emoji": "🍗",
+          "prep": 12,
+          "source": "tinyfish",
+          "fill": 10
+        },
+        {
+          "id": "desi-dhaba:veg-thali",
+          "vendorId": "desi-dhaba",
+          "vendorName": "Desi Dhaba Express",
+          "name": "Veg Thali",
+          "desc": "Dal, sabzi, 3 roti, rice, salad & pickle",
+          "price": 110,
+          "originalPrice": null,
+          "cat": "Meals",
+          "vendorCat": "Thalis",
+          "veg": true,
+          "available": true,
+          "protein": 11,
+          "kcal": 597,
+          "proteinStated": false,
+          "kind": "main",
+          "emoji": "🍱",
+          "prep": 12,
+          "source": "tinyfish",
+          "fill": 9.5
+        },
+        {
+          "id": "desi-dhaba:paneer-thali",
+          "vendorId": "desi-dhaba",
+          "vendorName": "Desi Dhaba Express",
+          "name": "Paneer Thali",
+          "desc": "Paneer sabzi, dal, 3 roti, rice & sweet · ~26g protein",
+          "price": 140,
+          "originalPrice": null,
+          "cat": "Meals",
+          "vendorCat": "Thalis",
+          "veg": true,
+          "available": true,
+          "protein": 26,
+          "kcal": 653,
+          "proteinStated": true,
+          "kind": "main",
+          "emoji": "🧀",
+          "prep": 12,
+          "source": "tinyfish",
+          "fill": 10
+        },
+        {
+          "id": "desi-dhaba:chole-bhature",
+          "vendorId": "desi-dhaba",
+          "vendorName": "Desi Dhaba Express",
+          "name": "Chole Bhature",
+          "desc": "Spicy chickpeas with 2 fluffy bhature",
+          "price": 90,
+          "originalPrice": null,
+          "cat": "Meals",
+          "vendorCat": "Breads & Curries",
+          "veg": true,
+          "available": true,
+          "protein": 13,
+          "kcal": 560,
+          "proteinStated": false,
+          "kind": "main",
+          "emoji": "🫓",
+          "prep": 12,
+          "source": "tinyfish",
+          "fill": 9.3
+        },
+        {
+          "id": "desi-dhaba:dal-tadka-4-roti",
+          "vendorId": "desi-dhaba",
+          "vendorName": "Desi Dhaba Express",
+          "name": "Dal Tadka + 4 Roti",
+          "desc": "Yellow dal with garlic tadka & 4 tawa roti",
+          "price": 75,
+          "originalPrice": null,
+          "cat": "Meals",
+          "vendorCat": "Breads & Curries",
+          "veg": true,
+          "available": true,
+          "protein": 11,
+          "kcal": 532,
+          "proteinStated": false,
+          "kind": "main",
+          "emoji": "🫓",
+          "prep": 12,
+          "source": "tinyfish",
+          "fill": 8.8
+        },
+        {
+          "id": "desi-dhaba:aloo-paratha-2-curd",
+          "vendorId": "desi-dhaba",
+          "vendorName": "Desi Dhaba Express",
+          "name": "Aloo Paratha (2) + Curd",
+          "desc": "Stuffed parathas with curd & pickle",
+          "price": 70,
+          "originalPrice": null,
+          "cat": "Meals",
+          "vendorCat": "Breads & Curries",
+          "veg": true,
+          "available": true,
+          "protein": 7,
+          "kcal": 523,
+          "proteinStated": false,
+          "kind": "main",
+          "emoji": "🫓",
+          "prep": 12,
+          "source": "tinyfish",
+          "fill": 8.2
+        },
+        {
+          "id": "desi-dhaba:sweet-lassi",
+          "vendorId": "desi-dhaba",
+          "vendorName": "Desi Dhaba Express",
+          "name": "Sweet Lassi",
+          "desc": "Thick Punjabi lassi",
+          "price": 40,
+          "originalPrice": null,
+          "cat": "Drinks",
+          "vendorCat": "Sweets & Drinks",
+          "veg": true,
+          "available": true,
+          "protein": 7,
+          "kcal": 260,
+          "proteinStated": false,
+          "kind": "drink",
+          "emoji": "🥤",
+          "prep": 3,
+          "source": "tinyfish",
+          "fill": 2.8
+        },
+        {
+          "id": "desi-dhaba:gulab-jamun-2",
+          "vendorId": "desi-dhaba",
+          "vendorName": "Desi Dhaba Express",
+          "name": "Gulab Jamun (2)",
+          "desc": "Warm syrupy dumplings",
+          "price": 35,
+          "originalPrice": null,
+          "cat": "Desserts",
+          "vendorCat": "Sweets & Drinks",
+          "veg": true,
+          "available": true,
+          "protein": 3,
+          "kcal": 229,
+          "proteinStated": false,
+          "kind": "dessert",
+          "emoji": "🍮",
+          "prep": 2,
+          "source": "tinyfish",
+          "fill": 2.9
+        }
+      ],
+      "offers": [
+        {
+          "id": "desi-dhaba:offer0",
+          "vendorId": "desi-dhaba",
+          "title": "Flat ₹25 off on orders above ₹250",
+          "details": "Auto-applied at checkout",
+          "code": null,
+          "type": "flat",
+          "value": 25,
+          "minOrder": 250,
+          "maxDiscount": null,
+          "appliesTo": [],
+          "groups": []
+        },
+        {
+          "id": "desi-dhaba:offer1",
+          "vendorId": "desi-dhaba",
+          "title": "20% off on all Thalis",
+          "details": "Weekdays, lunch only",
+          "code": null,
+          "type": "percent",
+          "value": 20,
+          "minOrder": 0,
+          "maxDiscount": null,
+          "appliesTo": [
+            "thali"
+          ],
+          "groups": []
+        }
+      ],
+      "notes": "",
+      "fetchedAt": null,
+      "source": "seed",
+      "lastRun": {
+        "status": "error",
+        "at": "2026-10-30T08:13:07.070Z",
+        "message": "\"/vendor-sites/desi-dhaba.html\" is a local path. TinyFish runs in the cloud and cannot open localhost — set PUBLIC_BASE_URL in .env to your deployed/tunnel URL, or give the vendor a full https:// URL."
+      },
+      "changes": []
+    },
+    "protein-bowl": {
+      "items": [
+        {
+          "id": "protein-bowl:chicken-rice-bowl",
+          "vendorId": "protein-bowl",
+          "vendorName": "Protein Bowl Co.",
+          "name": "Chicken Rice Bowl",
+          "desc": "Grilled chicken, brown rice, veggies · 35g protein",
+          "price": 150,
+          "originalPrice": null,
+          "cat": "Bowls",
+          "vendorCat": "Power Bowls",
+          "veg": false,
+          "available": true,
+          "protein": 35,
+          "kcal": 576,
+          "proteinStated": true,
+          "kind": "main",
+          "emoji": "🍗",
+          "prep": 10,
+          "source": "tinyfish",
+          "fill": 10
+        },
+        {
+          "id": "protein-bowl:paneer-tikka-bowl",
+          "vendorId": "protein-bowl",
+          "vendorName": "Protein Bowl Co.",
+          "name": "Paneer Tikka Bowl",
+          "desc": "Tandoori paneer, rice, salad · 24g protein",
+          "price": 130,
+          "originalPrice": null,
+          "cat": "Bowls",
+          "vendorCat": "Power Bowls",
+          "veg": true,
+          "available": true,
+          "protein": 24,
+          "kcal": 544,
+          "proteinStated": true,
+          "kind": "main",
+          "emoji": "🧀",
+          "prep": 10,
+          "source": "tinyfish",
+          "fill": 10
+        },
+        {
+          "id": "protein-bowl:egg-white-bowl",
+          "vendorId": "protein-bowl",
+          "vendorName": "Protein Bowl Co.",
+          "name": "Egg White Bowl",
+          "desc": "6 egg whites, sautéed veggies, toast · 22g protein",
+          "price": 110,
+          "originalPrice": null,
+          "cat": "Bowls",
+          "vendorCat": "Power Bowls",
+          "veg": false,
+          "available": true,
+          "protein": 22,
+          "kcal": 512,
+          "proteinStated": true,
+          "kind": "main",
+          "emoji": "🥚",
+          "prep": 10,
+          "source": "tinyfish",
+          "fill": 9.9
+        },
+        {
+          "id": "protein-bowl:soya-chunk-pulao",
+          "vendorId": "protein-bowl",
+          "vendorName": "Protein Bowl Co.",
+          "name": "Soya Chunk Pulao",
+          "desc": "Soya chunks cooked with rice & spices · 23g protein",
+          "price": 90,
+          "originalPrice": null,
+          "cat": "Meals",
+          "vendorCat": "Power Bowls",
+          "veg": true,
+          "available": true,
+          "protein": 23,
+          "kcal": 560,
+          "proteinStated": true,
+          "kind": "main",
+          "emoji": "🍚",
+          "prep": 12,
+          "source": "tinyfish",
+          "fill": 10
+        },
+        {
+          "id": "protein-bowl:sprouts-chaat",
+          "vendorId": "protein-bowl",
+          "vendorName": "Protein Bowl Co.",
+          "name": "Sprouts Chaat",
+          "desc": "Moong sprouts, onion, lemon · 11g protein",
+          "price": 50,
+          "originalPrice": null,
+          "cat": "Snacks",
+          "vendorCat": "Light & Lean",
+          "veg": true,
+          "available": true,
+          "protein": 11,
+          "kcal": 243,
+          "proteinStated": true,
+          "kind": "side",
+          "emoji": "🥗",
+          "prep": 5,
+          "source": "tinyfish",
+          "fill": 4.1
+        },
+        {
+          "id": "protein-bowl:boiled-eggs-4",
+          "vendorId": "protein-bowl",
+          "vendorName": "Protein Bowl Co.",
+          "name": "Boiled Eggs (4)",
+          "desc": "Four boiled eggs with pepper & salt · 24g protein",
+          "price": 48,
+          "originalPrice": null,
+          "cat": "Snacks",
+          "vendorCat": "Light & Lean",
+          "veg": false,
+          "available": true,
+          "protein": 24,
+          "kcal": 241,
+          "proteinStated": true,
+          "kind": "side",
+          "emoji": "🥚",
+          "prep": 5,
+          "source": "tinyfish",
+          "fill": 5.7
+        },
+        {
+          "id": "protein-bowl:chana-salad",
+          "vendorId": "protein-bowl",
+          "vendorName": "Protein Bowl Co.",
+          "name": "Chana Salad",
+          "desc": "Chickpeas, cucumber, tomato · 14g protein",
+          "price": 60,
+          "originalPrice": null,
+          "cat": "Snacks",
+          "vendorCat": "Light & Lean",
+          "veg": true,
+          "available": true,
+          "protein": 14,
+          "kcal": 252,
+          "proteinStated": true,
+          "kind": "side",
+          "emoji": "🥗",
+          "prep": 5,
+          "source": "tinyfish",
+          "fill": 4.6
+        },
+        {
+          "id": "protein-bowl:peanut-butter-toast",
+          "vendorId": "protein-bowl",
+          "vendorName": "Protein Bowl Co.",
+          "name": "Peanut Butter Toast",
+          "desc": "Whole wheat toast, peanut butter, banana · 12g protein",
+          "price": 60,
+          "originalPrice": null,
+          "cat": "Snacks",
+          "vendorCat": "Light & Lean",
+          "veg": true,
+          "available": true,
+          "protein": 12,
+          "kcal": 252,
+          "proteinStated": true,
+          "kind": "side",
+          "emoji": "🍞",
+          "prep": 5,
+          "source": "tinyfish",
+          "fill": 4.3
+        },
+        {
+          "id": "protein-bowl:grilled-chicken-wrap",
+          "vendorId": "protein-bowl",
+          "vendorName": "Protein Bowl Co.",
+          "name": "Grilled Chicken Wrap",
+          "desc": "Grilled chicken, hung curd dip · 30g protein",
+          "price": 120,
+          "originalPrice": null,
+          "cat": "Meals",
+          "vendorCat": "Light & Lean",
+          "veg": false,
+          "available": true,
+          "protein": 30,
+          "kcal": 616,
+          "proteinStated": true,
+          "kind": "main",
+          "emoji": "🍗",
+          "prep": 12,
+          "source": "tinyfish",
+          "fill": 10
+        },
+        {
+          "id": "protein-bowl:whey-banana-shake",
+          "vendorId": "protein-bowl",
+          "vendorName": "Protein Bowl Co.",
+          "name": "Whey Banana Shake",
+          "desc": "1 scoop whey, banana, milk · 28g protein",
+          "price": 99,
+          "originalPrice": null,
+          "cat": "Drinks",
+          "vendorCat": "Shakes",
+          "veg": true,
+          "available": true,
+          "protein": 28,
+          "kcal": 260,
+          "proteinStated": true,
+          "kind": "drink",
+          "emoji": "🥤",
+          "prep": 3,
+          "source": "tinyfish",
+          "fill": 5.4
+        }
+      ],
+      "offers": [
+        {
+          "id": "protein-bowl:offer0",
+          "vendorId": "protein-bowl",
+          "title": "GAINS15: 15% off above ₹199",
+          "details": "Up to ₹40 off. Use code GAINS15",
+          "code": "GAINS15",
+          "type": "percent",
+          "value": 15,
+          "minOrder": 199,
+          "maxDiscount": 40,
+          "appliesTo": [],
+          "groups": []
+        },
+        {
+          "id": "protein-bowl:offer1",
+          "vendorId": "protein-bowl",
+          "title": "Any bowl + shake combo: ₹30 off",
+          "details": "Pair any Power Bowl with any shake",
+          "code": null,
+          "type": "combo",
+          "value": 30,
+          "minOrder": 0,
+          "maxDiscount": null,
+          "appliesTo": [],
+          "groups": [
+            [
+              "bowl"
+            ],
+            [
+              "shake"
+            ]
+          ]
+        }
+      ],
+      "notes": "",
+      "fetchedAt": null,
+      "source": "seed",
+      "lastRun": {
+        "status": "error",
+        "at": "2026-10-30T08:13:15.681Z",
+        "message": "\"/vendor-sites/protein-bowl.html\" is a local path. TinyFish runs in the cloud and cannot open localhost — set PUBLIC_BASE_URL in .env to your deployed/tunnel URL, or give the vendor a full https:// URL."
+      },
+      "changes": []
+    }
+  },
+  "discoveryLog": [
+    {
+      "vendorId": "protein-bowl",
+      "at": "2026-10-30T08:13:15.682Z",
+      "status": "error",
+      "message": "\"/vendor-sites/protein-bowl.html\" is a local path. TinyFish runs in the cloud and cannot open localhost — set PUBLIC_BASE_URL in .env to your deployed/tunnel URL, or give the vendor a full https:// URL."
+    },
+    {
+      "vendorId": "desi-dhaba",
+      "at": "2026-10-30T08:13:07.070Z",
+      "status": "error",
+      "message": "\"/vendor-sites/desi-dhaba.html\" is a local path. TinyFish runs in the cloud and cannot open localhost — set PUBLIC_BASE_URL in .env to your deployed/tunnel URL, or give the vendor a full https:// URL."
+    },
+    {
+      "vendorId": "chai-corner",
+      "at": "2026-10-30T08:12:47.336Z",
+      "status": "error",
+      "message": "\"/vendor-sites/chai-corner.html\" is a local path. TinyFish runs in the cloud and cannot open localhost — set PUBLIC_BASE_URL in .env to your deployed/tunnel URL, or give the vendor a full https:// URL."
+    }
+  ]
+}

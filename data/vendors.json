@@ -1,0 +1,23 @@
+[
+  {
+    "id": "chai-corner",
+    "name": "Chai Corner",
+    "url": "/vendor-sites/chai-corner.html",
+    "location": "Near Central Library",
+    "deliveryFee": 15
+  },
+  {
+    "id": "desi-dhaba",
+    "name": "Desi Dhaba Express",
+    "url": "/vendor-sites/desi-dhaba.html",
+    "location": "Gate 2, opposite Hostel C",
+    "deliveryFee": 20
+  },
+  {
+    "id": "protein-bowl",
+    "name": "Protein Bowl Co.",
+    "url": "/vendor-sites/protein-bowl.html",
+    "location": "Sports Complex, Ground Floor",
+    "deliveryFee": 20
+  }
+]
